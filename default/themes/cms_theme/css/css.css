@@ -91,9 +91,16 @@ table,td{word-break:break-all}
 }
 
 #block-views-featured-slider-block {
-  padding: 0 12%;
   border-bottom: 2px solid #bf9e88;
   background: #EAE1D0;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+/*set slide image in center*/
+#block-views-featured-slider-block #views_slideshow_cycle_teaser_section_featured_slider-block {
+  margin: 0 auto;
 }
 
 #index-content-second {
@@ -108,20 +115,18 @@ table,td{word-break:break-all}
 }
 
 .region-content-second {
-   width: 100%;
-   max-width: 930px;
+   width: 80%;
    height: 100%;
-   float: left;
    background: #fff;
    border-bottom: 2px solid #bf9e88;
    padding: 10px 5px;
-   margin: 2% 0 2% 12%;
+   margin: 2% auto;
+   min-height: 150px;
 }
 
 /*hot & products*/
 .not-front.node-type-products .region-content-second {
     max-width: 1200px;
-    margin: 2% 0 2% 2%;
 }
 
 .not-front.node-type-products .region-content-second .node-products {
@@ -181,13 +186,20 @@ table,td{word-break:break-all}
    float: left;
 }
 
+.front #block-views-the-newest-block .views-view-grid {
+  width: 100%;
+}
+
+.front #block-views-the-newest-block .views-view-grid td {
+  width:30%;
+}
+
 .front #block-views-the-newest-block .views-field {
    margin: 10px 5px 0 5px;
-   border: 2px solid #bf9e88;
 }
 
 .front #block-views-the-newest-block .views-field img {
-   width: 195px;
+   border: 2px solid #bf9e88;
 }
 
 .not-front .view--wo-men .view-content .item-list li {
