@@ -98,6 +98,10 @@ table,td{word-break:break-all}
   padding: 0 10%;
 }
 
+#block-views-featured-slider-block img {
+  width: 100%;
+}
+
 /*set slide image in center*/
 #block-views-featured-slider-block #views_slideshow_cycle_teaser_section_featured_slider-block {
   margin: 0 auto;
@@ -142,8 +146,12 @@ table,td{word-break:break-all}
 }
 
 .not-front .field-name-field-main-image {
-    width: 960px;
+    max-width: 960px;
     float: left;
+}
+
+.not-front .field-name-field-main-image img {
+   width: 100%;
 }
 
 .not-front .node-products legend {
@@ -182,24 +190,27 @@ table,td{word-break:break-all}
 
 /*newest*/
 .front #block-views-the-newest-block {
-   width: 65%;
+   width: 68%;
    float: left;
 }
 
 .front #block-views-the-newest-block .views-view-grid {
   width: 100%;
+  padding: 0 2% 0 0;
 }
 
 .front #block-views-the-newest-block .views-view-grid td {
-  width:30%;
-}
-
-.front #block-views-the-newest-block .views-field {
-   margin: 10px 5px 0 5px;
+  width: 30%;
+  display: block;
+  float: left;
+  margin-right: 3%;
 }
 
 .front #block-views-the-newest-block .views-field img {
    border: 2px solid #bf9e88;
+   display: block;
+   margin: 0 auto;
+   margin-top: 10px;
 }
 
 .not-front .view--wo-men .view-content .item-list li {
@@ -212,10 +223,11 @@ table,td{word-break:break-all}
 .not-front.page-news .view--wo-men .view-content,
 .not-front.page-user #content .profile,
 .not-front.page-node .node {
-    max-width: 930px;
+    /*max-width: 930px;*/
     min-height: 200px;
     background: #fff;
-    padding: 1%;
+    padding: 2%;
+    width: 96%;
 }
 
 .not-front.page-news .view--wo-men .view-content .item-list ul li {
@@ -350,4 +362,58 @@ table,td{word-break:break-all}
 
 .not-front.page-node-webform-results #index-content-second .view-content table td a {
    color: blue;
+}
+
+/*For phone*/
+@media only screen and (max-width: 667px) {
+  /*front*/
+  #header #block-system-main-menu .menu li {
+    width: 100%;
+  }
+
+  .header_text {
+    width: 100%;
+    display: inline-block;
+  }
+  
+  #site_logo .logo_image {
+    margin: 0 auto;
+    float: none;
+  }
+  
+  #site_logo {
+    width: 35%;
+    text-align: center;
+    float: right;
+  }
+  
+  .region-header {
+    margin-top: 0; 
+    width: 50%;
+    float: right;
+  }
+  
+  .front #block-views-wo-men-block {
+    width: 98%;
+  }
+  
+  .region-content-second {
+    width: 100%;
+  }
+
+  .front #block-views-the-newest-block {
+    width: 100%;
+  }
+
+  .front #block-views-the-newest-block .views-view-grid td {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .region-bottom {
+    width: 100%;
+  }
+  
+  
+
 }
