@@ -63,14 +63,19 @@ table,td{word-break:break-all}
   text-decoration: none;
 }
 
-#site_logo{
-  padding:10px 20px;
-  height:60px;
+#site_logo {
+  padding: 10px 20px;
 }
-#site_logo .logo_image{
-  float:left;
-  width:100px;
+#site_logo .logo_image {
+  float: left;
+  margin-top: -15px;
 }
+
+#site_logo .logo_image img {
+  height: 80px;
+  margin: 0 auto;
+}
+
 #site_logo h1{
   line-height: 35px;
   font-size:20px;
@@ -96,6 +101,10 @@ table,td{word-break:break-all}
   width: 80%;
   margin: 0 auto;
   padding: 0 10%;
+}
+
+#block-views-featured-slider-block a {
+  cursor: auto;
 }
 
 #block-views-featured-slider-block img {
@@ -380,7 +389,7 @@ table,td{word-break:break-all}
     margin: 0 auto;
     float: none;
   }
-  
+
   #site_logo {
     width: 35%;
     text-align: center;
