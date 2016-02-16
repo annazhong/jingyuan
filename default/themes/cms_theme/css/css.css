@@ -95,7 +95,11 @@ table,td{word-break:break-all}
   width: 100%;
 }
 
-#block-views-featured-slider-block {
+.front .pager {
+  display: none;
+}
+
+.views_slideshow_cycle_main {
   border-bottom: 2px solid #bf9e88;
   background: #EAE1D0;
   width: 80%;
@@ -103,16 +107,39 @@ table,td{word-break:break-all}
   padding: 0 10%;
 }
 
-#block-views-featured-slider-block a {
-  cursor: auto;
-}
-
-#block-views-featured-slider-block img {
+#views_slideshow_cycle_main img {
   width: 100%;
 }
 
+.views-slideshow-cycle-main-frame-row-item div img {
+  display: none;
+}
+
+.views-slideshow-controls-bottom {
+  float: right;
+  z-index: 1000000;
+  margin: -40px 15% 0 0;
+  cursor: pointer;
+}
+
+.views-slideshow-controls-bottom .views-slideshow-pager-field-item {
+  float: right;
+}
+
+.views-slideshow-controls-bottom .views-slideshow-pager-field-item .views-content-field-images {
+  z-index: 1000;
+  position: relative;
+  margin: 5px;
+}
+
+.views-slideshow-controls-bottom .views-slideshow-pager-field-item .views-content-field-images img {
+  border: 1px solid #fff;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+}
+
 /*set slide image in center*/
-#block-views-featured-slider-block #views_slideshow_cycle_teaser_section_featured_slider-block {
+.view-products #views_slideshow_cycle_teaser_section_products-block_1 {
   margin: 0 auto;
 }
 
@@ -198,24 +225,24 @@ table,td{word-break:break-all}
 }
 
 /*newest*/
-.front #block-views-the-newest-block {
+.front .block-views-the-newest-block {
    width: 68%;
    float: left;
 }
 
-.front #block-views-the-newest-block .views-view-grid {
+.front .block-views-the-newest-block .views-view-grid {
   width: 100%;
   padding: 0 2% 0 0;
 }
 
-.front #block-views-the-newest-block .views-view-grid td {
+.front .block-views-the-newest-block .views-view-grid td {
   width: 30%;
   display: block;
   float: left;
   margin-right: 3%;
 }
 
-.front #block-views-the-newest-block .views-field img {
+.front .block-views-the-newest-block .views-field img {
    border: 2px solid #bf9e88;
    display: block;
    margin: 0 auto;

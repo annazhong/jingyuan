@@ -77,7 +77,7 @@
     <div id="site_logo">
       <div class="logo_image"><img alt="/" src="/sites/default/themes/cms_theme/images/logo.png"/></div>
       <div class="header_text">
-        <h1>精源家具有限公司</h1>
+        <h1>金源家具有限公司</h1>
         <p>JiangXi Jinyuan Furniture Co., Ltd.</p>
       </div>
     </div>
