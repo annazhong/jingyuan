@@ -400,6 +400,11 @@ table,td{word-break:break-all}
    color: blue;
 }
 
+/*about-us*/
+.node-type-about-us .field-name-field-geofiled {
+   margin-top: 10px;
+}
+
 /*For phone*/
 @media only screen and (max-width: 667px) {
   /*front*/
