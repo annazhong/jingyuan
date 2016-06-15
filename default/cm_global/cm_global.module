@@ -1,1 +1,15 @@
 <?php
+/**
+*  Implementation of hook_form_alter().
+*/  
+function cm_global_form_views_exposed_form_alter(&$form, &$form_state) {
+  if($form['#id'] == 'views-exposed-form-products-page-1') {
+  $form['actions']['submit']['#type'] = 'image_button';
+  $form['actions']['submit']['#id'] = 'edit-submit-search2';
+  $form['actions']['submit']['#value'] = 'Search';
+  $form['actions']['submit']['#name'] = '';
+  $form['actions']['submit']['#src'] = drupal_get_path('theme', 'bartik2') . '/sites/all/themes/bartik2/images/bouton-search.png';
+  
+  }
+  
+}

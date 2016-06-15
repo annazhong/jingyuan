@@ -349,6 +349,14 @@ table,td{word-break:break-all}
   width: 40%;
 }
 
+.view-products .views-exposed-widgets {
+  padding-left: 20px;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 1.2em;
+}
+
 .not-front .view-products .view-content .views-field-field-main-image img {
    max-width: 300px;
    max-height: 200px;
