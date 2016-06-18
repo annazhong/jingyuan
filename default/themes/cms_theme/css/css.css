@@ -184,6 +184,7 @@ table,td{word-break:break-all}
 
 .not-front .field-name-field-main-image img {
    width: 100%;
+   height: auto;
 }
 
 .not-front .node-products legend {
@@ -361,12 +362,19 @@ table,td{word-break:break-all}
    max-width: 300px;
    max-height: 200px;
    width: 100%;
+   height: auto;
 }
+
+ .page-node .field-item img {
+   width: 100%;
+   height: auto;
+ }
 
 .front .block-views-the-newest-block .view-content img {
    max-width: 160px;
    max-height: 110px;
    width: 100%;
+   height: auto;
 }
 
 /*products-by-grid*/
@@ -461,26 +469,61 @@ table,td{word-break:break-all}
   }
   
   .front #block-views-wo-men-block {
-    width: 98%;
+    width: 90%;
   }
   
-  .region-content-second {
+  .front .region-content-second {
+    min-height: 550px;
+  }
+  
+  .page-user .region-content-second {
+    min-height: 80px;
+  }
+  
+  #views_slideshow_cycle_main_products-slideshow img {
+    height: 50%;
+    width: 100%;
+  }
+  
+  #views_slideshow_cycle_teaser_section_products-slideshow {
+    height: 232px;
+  }
+
+  .front .block-views-the-newest-block {
     width: 100%;
   }
 
-  .front #block-views-the-newest-block {
-    width: 100%;
-  }
-
-  .front #block-views-the-newest-block .views-view-grid td {
+  .front .block-views-the-newest-block .views-view-grid td {
     width: 100%;
     margin: 0 auto;
   }
   
   .region-bottom {
     width: 100%;
+    padding: 20px;
   }
   
+  /*
+    product page.
+  */
+  .views-exposed-form .views-exposed-widget {
+    float: none;
+  }
   
+  .views-exposed-form .views-exposed-widget .form-type-textfield {
+    float: none;
+    padding: 5px 0px 0px 2px;
+  }
+  
+  .views-exposed-form .views-exposed-widget .form-type-select {
+    padding: 5px 0px 0px 2px;
+  }
+
+  /*
+   会员
+  */
+  .not-front #user-login .form-text {
+    width: 120px;
+  }
 
 }

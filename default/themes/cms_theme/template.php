@@ -1,12 +1,11 @@
 <?php
 /**
- * Implements hook_preprocess_node().
- *
- * @see hook_preprocess_node()
- */
-function cms_theme_preprocess_node(&$variables) {
-   $node_type = isset($variables['node']->type) ? $variables['node']->type : '';
-   if ($node_type == 'products') {
-       
-   }
+*  Implementation of hook_form_alter().
+*/  
+function cms_theme_form_views_exposed_form_alter(&$form, &$form_state) {
+  if($form['#id'] == 'views-exposed-form-products-page-1' ||
+    $form['#id'] == 'views-exposed-form-products-page-2') {
+    $form['field_color_value']['#options']['All'] = '任意';
+    $form['submit']['#value'] = '查找';
+  }
 }
