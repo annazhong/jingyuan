@@ -474,6 +474,7 @@ table,td{word-break:break-all}
   
   .front .region-content-second {
     min-height: 550px;
+    width: 90%;
   }
   
   .page-user .region-content-second {
@@ -481,7 +482,7 @@ table,td{word-break:break-all}
   }
   
   #views_slideshow_cycle_main_products-slideshow img {
-    height: 50%;
+    height: auto;
     width: 100%;
   }
   
