@@ -30,4 +30,6 @@ if (isset($row->_field_data['nid']['entity']->field_images['uid'])) {
   $output = '<a href="' . $path . '" ><img src="'. $field_image_url .'" width="220" height="165"></a>';
 }
 ?>
-<?php print $output;
+<?php print $output;?>
+
+<?php include_once("baidu_js_push.php");

@@ -169,3 +169,6 @@
 
   </div></div> <!-- /#page, /#page-wrapper -->
 <?php print render($page['bottom']); ?>
+
+<?php include_once("baidu_js_push.php"); ?>
+
