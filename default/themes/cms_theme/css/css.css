@@ -445,6 +445,10 @@ table,td{word-break:break-all}
 /*For phone*/
 @media only screen and (max-width: 667px) {
   /*front*/
+  #header {
+    width: 85%;
+  }
+
   #header #block-system-main-menu .menu li {
     width: 100%;
   }
@@ -503,7 +507,6 @@ table,td{word-break:break-all}
   }
   
   .region-bottom {
-    width: 100%;
     padding: 20px;
   }
   
