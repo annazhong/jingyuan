@@ -445,10 +445,6 @@ table,td{word-break:break-all}
 /*For phone*/
 @media only screen and (max-width: 667px) {
   /*front*/
-  #header {
-    width: 85%;
-  }
-
   #header #block-system-main-menu .menu li {
     width: 100%;
   }
@@ -476,11 +472,15 @@ table,td{word-break:break-all}
   }
   
   .front #block-views-wo-men-block {
-    width: 90%;
+    width: 95%;
   }
   
   .front .region-content-second {
     min-height: 550px;
+    width: 90%;
+  }
+  
+  .not-front .region-content-second {
     width: 90%;
   }
   
