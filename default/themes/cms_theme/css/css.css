@@ -355,7 +355,10 @@ table,td{word-break:break-all}
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
-  margin-top: 1.2em;
+  margin-top: 0.8em;
+  width: 40px;
+  background-color: #000;
+  color: #fff;
 }
 
 .not-front .view-products .view-content .views-field-field-main-image img {
@@ -507,9 +510,6 @@ table,td{word-break:break-all}
   /*
     product page.
   */
-  .views-exposed-form .views-exposed-widget {
-    float: none;
-  }
   
   .views-exposed-form .views-exposed-widget .form-type-textfield {
     float: none;
@@ -525,6 +525,14 @@ table,td{word-break:break-all}
   */
   .not-front #user-login .form-text {
     width: 120px;
+  }
+  
+  .view-products .views-exposed-widgets {
+    padding-left: 5px;
+  }
+  
+  .views-exposed-form .views-exposed-widget .form-submit {
+    margin-top: 1.2em;
   }
 
 }
